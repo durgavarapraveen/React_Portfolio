@@ -28,7 +28,7 @@
 }
 .nav-menu {
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(6, auto);
     grid-gap: 10px;
     list-style: none;
     text-align: center;
@@ -89,13 +89,18 @@
 
 @media screen and (max-width: 576px) {
     .navbar {
-        top: 94%;
-        height: 60px;
+        top: calc(100vh - 60px);
+        height: 80px;
+        background-color: #d5d5d5;
+        /* position: fixed; */
+        bottom: 0;
+        border-radius: 5px;
     }
     .logo-name {
         font-size: 1rem;
         position: absolute;
         left: 10px;
+        top: 25%;
     }
     .nav-menu {
         display: grid;
@@ -120,7 +125,7 @@
     .navbar-container {
         justify-content: left;
         left: 20px;
-        height: 60px;
+        height: 100%;
     }
     .nav-item {
         display: flex;

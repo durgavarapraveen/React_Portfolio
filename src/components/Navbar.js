@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import './Navbar.css'
 import {FaHome, FaTelegramPlane} from 'react-icons/fa'
 import {BsFillPersonFill, BsFillFileEarmarkSpreadsheetFill, BsImage} from 'react-icons/bs'
+import { MdOutlineWork } from "react-icons/md";
 
 function Navbar() {
 
@@ -28,6 +29,10 @@ function Navbar() {
                     <ul><span><a href='#about' className='home'>About</a></span></ul>
                 </li>
                 <li className='nav-item'>
+                    <MdOutlineWork className='icon' />
+                    <ul><span><a href='#work' className='home'>Work</a></span></ul>
+                </li>
+                <li className='nav-item'>
                     < BsFillFileEarmarkSpreadsheetFill className='icon' />
                     <ul><span><a href='#skills' className='home'>Skills</a></span></ul>
                 </li>
@@ -39,9 +44,9 @@ function Navbar() {
                     <FaTelegramPlane className='icon' />
                     <ul><span><a href='#contact' className='home'>Contact</a></span></ul>
                 </li>
-                <div className='menu-icon-1' onClick={handleclick}>
+                {/* <div className='menu-icon-1' onClick={handleclick}>
                     <i className={click ? "fa-solid fa-xmark" : "fa-solid fa-xmark"} />
-                 </div>
+                 </div> */}
             </ul>
 
         </div>

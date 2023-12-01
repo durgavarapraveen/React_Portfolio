@@ -1,9 +1,11 @@
-import React, {useState} from 'react'
+import React, {useState, useRef, useLayoutEffect} from 'react'
 import './home.css'
 import emailjs from 'emailjs-com'
 import { FaInstagram,FaTelegramPlane, FaMedal, FaSuitcase, FaHeadset, FaWhatsapp } from 'react-icons/fa';
 import { FiGithub,FiMail, FiLinkedin} from 'react-icons/fi';
 import { BiMailSend, BiRightArrowAlt } from "react-icons/bi";
+import chrome from '../Vedios/chrome.mp4'
+import arrow from '../Vedios/circle-arrow.png'
 
 
 function Home() {
@@ -77,7 +79,7 @@ function Home() {
                         <div className='matter-box'>
                             <FaSuitcase className='c10'/>
                             <span className='c11'>Completed</span>
-                            <span className='c12'>10+ projects</span>
+                            <span className='c12'>15+ projects</span>
                         </div>
                         <div className='matter-box'>
                             <FaHeadset className='c10'/>
@@ -86,6 +88,21 @@ function Home() {
                         </div>
                     </div>
                     <p>Full Stack developer, I create web pages with UI / UX user interface, I have ability to write efficient code for a wide range of projects. I have experience working with a HTML, CSS, JavaScript, React and Django</p>
+                </div>
+            </div>
+        </div>
+
+        <div className='card-3' id='work' >
+            <div className='aboutme'>
+                <span>Work</span>
+            </div>
+            <div className='work-col'>
+                <div className='work-div'>
+                    <p className='heading'>Full Stack Developer - <span className='heading-span'>Tamboola</span> <span className='heading-date'>[Aug/23 - Nov/23]</span> </p>
+                    <p className='innertext'><img src={arrow} alt='arrow' /> Developed a user-friendly platform using ReactJS, Node.js, MongoDB, Express, Redux, Material UI, and Firebase..</p>
+                    <p className='innertext'> <img src={arrow} alt='arrow' />Designed and implemented a dynamic and responsive interface, enhancing user experience and engagement.</p>
+                    <p className='innertext'> <img src={arrow} alt='arrow' />Engineered robust backend systems for efficient data management and scalability.</p>
+                    <p className='innertext'> <img src={arrow} alt='arrow' />Collaborated cross-functionally to align design with user needs, boosting engagement and operational efficiency in mobile repair services.</p>
                 </div>
             </div>
         </div>
@@ -141,13 +158,7 @@ function Home() {
                                 <span>Basic</span>
                             </div>
                         </div>
-                        {/* <div className='sk'>
-                            <span class="material-symbols-outlined">verified</span>
-                            <div className='column'>
-                                <p>Git</p>
-                                <span>Intermediate</span>
-                            </div>
-                        </div> */}
+                        
                     </div>
                 </div>
 
@@ -194,46 +205,50 @@ function Home() {
                 </div>
             </div>
         </div>    
+
+        
+
         <div className='card-3' id='project'>
             <div className='aboutme'>
                 <span>Projects</span>
-                <p>My Projects</p>
+                {/* <p>My Projects</p> */}
             </div>
             <div className='projects-row'>
                 <div className='container-projects'>
-                    <img src='Images\clement-helardot-95YRwf6CNw8-unsplash.jpg' alt='TIC TAC TOE' />
-                    <p className='web-name'>Tic Tac Toe Game</p>
-                    <a href='https://durgavarapraveen.github.io/Tic_Tac_Toe/' >Demo</a>
+                    <img src='Images\Guesthouse.png' alt='TIC TAC TOE' />
+                    <p className='web-name'>Guest House Booking Website</p>
+                    <a href='https://github.com/durgavarapraveen/GuestHouseBookingWebsite' >Git Link</a>
                 </div>
+                
                 <div className='container-projects'>
-                    <img src='Images\designecologist-Pmh0UoG1vlE-unsplash.jpg' alt='Quiz Game' />
-                    <p className='web-name'>Quiz Game</p>
-                    <a href='https://durgavarapraveen.github.io/Quiz-Game/' >Demo</a>
+                    <img src='Images\Tamboola.png' alt='Quiz Game' />
+                    <p className='web-name'>Tamboola - Online Repair Store</p>
+                    <a href='https://github.com/gadset' >Git Link</a>
                 </div>
+
                 <div className='container-projects'>
                     <img src='Images\rubaitul-azad-qqV7i39Ekj0-unsplash.jpg' alt='Translator' />
-                    <p className='web-name'>Tranlator</p>
-                    <a href='https://durgavarapraveen.github.io/Translator/' >Demo</a>
+                    <p className='web-name'>College Website</p>
+                    <a href='https://github.com/durgavarapraveen/MAMPG-Project' >Git Link</a>
                 </div>
+
                 <div className='container-projects'>
                     <img src='https://i.imgur.com/hMpiEz0.png' alt='Epicure' />
                     <p className='web-name'>Epicure - Food Bookin website</p>
                     <a href='https://github.com/durgavarapraveen/Epicure_OnlineFoodBooking' >Github Link</a>
                 </div>
+                
                 <div className='container-projects'>
-                    <img src='Images\erik-mclean-bGWVhFY1gH0-unsplash.jpg' alt='Epicure' />
-                    <p className='web-name'>Fullstack - LoginPage</p>
-                    <a href='https://github.com/durgavarapraveen/Fullstack_Loginpage' >Github Link</a>
+                    {/* <img src='Images\react-webpage.png' alt='Epicure' /> */}
+                    <iframe src={chrome} />
+                    <p className='web-name'>Chrome Customization</p>
+                    <a href='https://github.com/durgavarapraveen/ChromeCustomization'>Git Link</a>
                 </div>
+
                 <div className='container-projects'>
-                    <img src='Images\nick-morrison-FHnnjk1Yj7Y-unsplash.jpg' alt='Epicure' />
-                    <p className='web-name'>Blog</p>
-                    <a href='https://github.com/durgavarapraveen/Blog' >Github Link</a>
-                </div>
-                <div className='container-projects'>
-                    <img src='Images\react-webpage.png' alt='Epicure' />
-                    <p className='web-name'>Adventure - Webpage</p>
-                    <a href='https://647210d66d456f046d11ee56--lambent-hummingbird-10acf7.netlify.app/signup' >Demo</a>
+                    <img src='Images\Weatherapp.png' alt='Weather APP' />
+                    <p className='web-name'>Weather App</p>
+                    <a href='https://github.com/durgavarapraveen/Weather_App'>Github Link</a>
                 </div>
             </div>
         </div>
@@ -248,7 +263,7 @@ function Home() {
                         <div className='box-11'>
                             <BiMailSend className='icon-box-11'/>
                             <p className='link-box-11'>Email</p>
-                            <p className='username'>user@gmail.com</p>
+                            <p className='username'>geda.1@iitj.ac.in</p>
                             <a href='mailto:geda.1@iitj.ac.in'>Write me <BiRightArrowAlt/></a>
                         </div>
                         <div className='box-11'>
@@ -289,9 +304,10 @@ function Home() {
                 <div className='fotter-links'>
                     <span><a href='#home' className='home-f'>Home</a></span>
                     <span><a href='#about' className='about-f'>About</a></span>
+                    <span><a href='#work' className='about-f'>Work</a></span>
                     <span><a href='#skills' className='skills-f'>Skills</a></span>
                     <span><a href='#project' className='project-f'>Projects</a></span>
-                    <span><a href='#contact' className='contact-f'>Contact</a></span>
+                    {/* <span><a href='#contact' className='contact-f'>Contact</a></span> */}
                 </div>
                 <div className='fotter-apps'>
                     <a href='https://www.linkedin.com/in/geda-durga-vara-praveen-5a4348237/'><FiLinkedin/> </a>
@@ -303,50 +319,7 @@ function Home() {
                 <p></p>
             </div>
         </fotter>
-
-        {/* <div className='header-1'>
-            <p ><a href='#' className='name1'>Praveen</a> </p>
-            <button onClick={handleclick}><span class="material-symbols-outlined">widgets</span></button>
-        </div>
-
-            <div className={click ? 'hidden-col' : 'view'}>
-                <div  className='hidden-col'>
-                    <a href='#'><FaHome className='span' /></a>
-                    <a href='#' className='home1'>Home</a>
-                </div>
-                
-                <div className='hidden-col'>
-                    <a href='#about'><BsFillPersonFill className='span' /> </a>
-                    <a href='#about' className='home1'>About</a>
-                </div>
-                <div className='hidden-col'>
-                    <a href='#skills'><BsFillFileEarmarkSpreadsheetFill className='span' /> </a>
-                    <a href='#skills' className='home1'>Skills</a>
-                </div>
-                <div className='hidden-col'>
-                    <a href='#project'><BsFillImageFill className='span' /> </a>
-                    <a href='#project' className='home1'>Projects</a>
-                </div>
-                <div className='hidden-col'>
-                    <a href='#contact'><FaTelegramPlane className='span' /> </a>
-                    <a href='#contact' className='home1'>Contact</a>
-                </div>
-
-            </div> */}
-
-
-
-        {/* <div className='scroll'>
-            <p>Scroll Down</p>
-             <span class="material-symbols-outlined">expand_more</span>
-             <i class="fa-solid fa-down"></i>
-        </div>  */}
-
-        
-        
-
     
-
     </div>
   );
 }

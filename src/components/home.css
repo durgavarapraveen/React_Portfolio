@@ -346,6 +346,42 @@ header {
     padding: 10px;
     margin: 80px auto 10px auto;
 }
+
+.work-col {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.work-div {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 20px auto;
+    background-color: #e5e5e5;
+    padding: 20px 20px;
+    border-radius: 8px;
+}
+.work-div .heading {
+    font-size: 20px;
+    margin: 9px 2px !important;
+}
+.work-div .heading-span {
+    font-size: 22px;
+    font-weight: bold !important;
+}
+.work-div .heading-date {
+    font-size: 13px;
+    margin: 3px 10px;
+    font-weight: bolder;
+}
+.work-div .innertext {
+    font-size: 15px;
+
+    margin: 4px !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
 .projects-row {
     display: flex;
     flex-wrap: wrap;
@@ -362,6 +398,12 @@ header {
 }
 
 .container-projects img {
+    width: 330px;
+    height: 220px;
+    border-radius: 10px;
+    padding: 15px;
+}
+.container-projects iframe {
     width: 330px;
     height: 220px;
     border-radius: 10px;
@@ -691,8 +733,12 @@ form {
         flex-direction: column-reverse;
         height: 100%;
         box-shadow: none;
-        margin-top: 80px;
+        margin: 30px 0 0 0;
     }
+    .link , .photo {
+        margin-left: 0;
+    }
+    
     @keyframes updown {
         0% {top: 0%;}
         50% {top: 0.5%;}
@@ -708,14 +754,57 @@ form {
         height: 200px;
     }
     .intro {
-        width: 80%;
-        margin-left: 15px;
-        margin-top: 0;
+        width: 90%;
+        padding: 0;
+        margin: auto;
+    }
+    .card-2 , .card-3{
+        width: 90%;
+        margin: 20px auto 0 auto;
     }
     .aboutme-img {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .aboutme span {
+        font-size: 40px;
+        color: #000000;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: 600;
+        padding: 10px;
+        margin: 10px auto 10px auto;
+    }
+    .aboutme {
+        margin: 15px auto;
+    }
+    .aboutme-matter p {
+        font-size: 14px;
+        width: 100%;
+    }
+    .work-col {
+        margin-top: 20px;
+    }
+    .work-div {
+        width: 100%;
+        margin: 10px auto;
+        padding: 10px 10px;
+        border-radius: 5px;
+    }
+    .work-div .heading {
+        font-size: 16px;
+        margin: 9px 2px !important;
+    }
+    .work-div .heading-span {
+        font-size: 18px;
+        font-weight: bold !important;
+    }
+    .work-div .heading-date {
+        font-size: 10px;
+        margin: 3px 0px;
+    }
+    .work-div .innertext {
+        font-size: 12px;
     }
     .container-skills-1 {
         width: 90%;
@@ -723,6 +812,12 @@ form {
     .contact-row {
         flex-direction: column;
         align-items: center;
+    }
+    .container-projects {
+        margin: 10px 0;
+    }
+    .container-projects img , .container-projects iframe {
+        width: 100%;
     }
     .contact-box, .message-box {
         width: 100%;
@@ -732,6 +827,9 @@ form {
     }
     .container {
         position: relative;
+    }
+    .aboutme1 span {
+        margin: 10px auto;
     }
 }
 
