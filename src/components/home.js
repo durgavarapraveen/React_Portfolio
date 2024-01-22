@@ -6,6 +6,9 @@ import { FiGithub,FiMail, FiLinkedin} from 'react-icons/fi';
 import { BiMailSend, BiRightArrowAlt } from "react-icons/bi";
 import chrome from '../Vedios/chrome.mp4'
 import arrow from '../Vedios/circle-arrow.png'
+import Mampg from '../Vedios/Mampg.png'
+import DevQuest from '../Vedios/DevQuest.png'
+import Ignus from '../Vedios/Ignus.png'
 
 
 function Home() {
@@ -193,14 +196,14 @@ function Home() {
                                 <span>Basic</span>
                             </div>
                         </div>
-                        <div className='sk'>
+                        {/* <div className='sk'>
                             <span class="material-symbols-outlined">verified</span>
                             <div className='column'>
                                 <p>PHP</p>
                                 <span>Basic</span>
                             </div>
                         </div>
-                        
+                         */}
                     </div>
                 </div>
             </div>
@@ -215,34 +218,47 @@ function Home() {
             </div>
             <div className='projects-row'>
                 <div className='container-projects'>
-                    <img src='Images\Guesthouse.png' alt='TIC TAC TOE' />
+                    <img src='Images\Guesthouse.png' alt='IITJ Guest House' />
                     <p className='web-name'>Guest House Booking Website</p>
-                    <a href='https://github.com/durgavarapraveen/GuestHouseBookingWebsite' >Git Link</a>
+                    {/* <a href='https://github.com/durgavarapraveen/IITJ_GuestHouse' >Git Link</a> */}
+                    <a href='https://institute-guest-house-booking.onrender.com/' >Live Link</a>
+                </div>
+
+                <div className='container-projects'>
+                    <img src={DevQuest} alt='Dev Quest' />
+                    <p className='web-name'>Compare - Compare your cost</p>
+                    <a href='https://github.com/durgavarapraveen/Devquest' >Github Link</a>
+                </div>
+
+                <div className='container-projects'>
+                    <img src={Ignus} alt='Ignus' />
+                    <p className='web-name'>Ignus</p>
+                    <a href='https://www.ignus.co.in/'>Live Link</a>
                 </div>
                 
                 <div className='container-projects'>
                     <img src='Images\Tamboola.png' alt='Quiz Game' />
                     <p className='web-name'>Tamboola - Online Repair Store</p>
-                    <a href='https://github.com/gadset' >Git Link</a>
+                    <a href='https://github.com/gadset' >Github Link</a>
                 </div>
 
                 <div className='container-projects'>
-                    <img src='Images\rubaitul-azad-qqV7i39Ekj0-unsplash.jpg' alt='Translator' />
+                    <img src={Mampg} alt='MAMPG' />
                     <p className='web-name'>College Website</p>
-                    <a href='https://github.com/durgavarapraveen/MAMPG-Project' >Git Link</a>
+                    <a href='https://github.com/durgavarapraveen/MAMPG-Project' >Github Link</a>
                 </div>
 
                 <div className='container-projects'>
                     <img src='https://i.imgur.com/hMpiEz0.png' alt='Epicure' />
-                    <p className='web-name'>Epicure - Food Bookin website</p>
+                    <p className='web-name'>Epicure - Food Booking website</p>
                     <a href='https://github.com/durgavarapraveen/Epicure_OnlineFoodBooking' >Github Link</a>
                 </div>
                 
                 <div className='container-projects'>
                     {/* <img src='Images\react-webpage.png' alt='Epicure' /> */}
-                    <iframe src={chrome} />
+                    <iframe src={chrome} alt='Chrome Customization' />
                     <p className='web-name'>Chrome Customization</p>
-                    <a href='https://github.com/durgavarapraveen/ChromeCustomization'>Git Link</a>
+                    <a href='https://github.com/durgavarapraveen/ChromeCustomization'>Github Link</a>
                 </div>
 
                 <div className='container-projects'>
