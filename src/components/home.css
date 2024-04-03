@@ -110,7 +110,7 @@ header {
     width: 50px;
     border-top: 1px solid black;
 }
-.develop p {
+.develop .Typewriter {
     font-size: 20px;
     font-family: poppins;
     font-family: 'Poppins', sans-serif;
