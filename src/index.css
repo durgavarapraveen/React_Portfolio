@@ -1,7 +1,7 @@
 
 html {
     scroll-behavior: smooth;
-    
+    scrollbar-width: 0;
 }
 
 ::-webkit-scrollbar {
