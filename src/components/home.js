@@ -19,6 +19,9 @@ import Ignus from "../Vedios/Ignus.png";
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import toast from "react-hot-toast";
+import moneyTrackerApp from "../Vedios/MonryTrackerApp.jpg";
+import ChatApp from "../Vedios/chatApp.jpg";
+import Ecommerce from "../Vedios/Ecommerce.jpg";
 
 function Home() {
   const [name, setName] = useState("");
@@ -141,7 +144,7 @@ function Home() {
               >
                 <FaSuitcase className="c10" />
                 <span className="c11">Completed</span>
-                <span className="c12">15+ projects</span>
+                <span className="c12">20+ projects</span>
               </motion.div>
 
               <motion.div
@@ -158,9 +161,10 @@ function Home() {
             <p>
               As a Full Stack developer, I excel in UI/UX design, crafting
               engaging web experiences. Proficient in HTML, CSS, JavaScript,
-              React, Django, and the MERN stack, I deliver efficient, robust
-              solutions for diverse projects, showcasing a blend of technical
-              expertise and creative insight in my portfolio.
+              React, NextJs,React Native, Firebase, supabase, Django, and the
+              MERN. I deliver efficient, robust solutions for diverse projects,
+              showcasing a blend of technical expertise and creative insight in
+              my portfolio.
             </p>
           </div>
         </div>
@@ -168,8 +172,69 @@ function Home() {
 
       <div className="card-3" id="work">
         <div className="aboutme">
-          <span>Work</span>
+          <span>Experience</span>
+          <p>worked in</p>
         </div>
+
+        <div className="work-col">
+          <div className="work-div">
+            <p className="heading">
+              Frontend Developer - <span className="heading-span">LinkU</span>{" "}
+              <span className="heading-date">[Freelance]</span>{" "}
+            </p>
+            <p className="innertext">
+              <img src={arrow} alt="arrow" />
+              Developed a Progressive Web App for Linku startup by implementing
+              service workers to enhance user experience and drive engagement,
+              enabling offline access and improved performance.
+            </p>
+            <p className="innertext">
+              <img src={arrow} alt="arrow" />
+              Integrated token-based authentication using Axios interceptors,
+              ensuring secure session management with automatic refresh of
+              access tokens every 15 minutes for a seamless user experience.
+            </p>
+            <p className="innertext">
+              {" "}
+              <img src={arrow} alt="arrow" /> Built multi-role portals for
+              candidates, recruiters, and admins, each with distinct
+              functionalities, along with PhonePe payment gateway integration
+              and infinite scroll for dynamic content loading.
+            </p>
+          </div>
+        </div>
+
+        <div className="work-col">
+          <div className="work-div">
+            <p className="heading">
+              Full Stack Developer -{" "}
+              <span className="heading-span">KB Cloudtech</span>{" "}
+              <span className="heading-date">[May/24 - Dec/24]</span>{" "}
+            </p>
+            <p className="innertext">
+              <img src={arrow} alt="arrow" />
+              Worked on multiple projects at the same time and delivered them.
+            </p>
+            <p className="innertext">
+              <img src={arrow} alt="arrow" />
+              Worked using NextJs and Firebase
+            </p>
+            <p className="innertext">
+              {" "}
+              <img src={arrow} alt="arrow" /> Incorporated LMS and CMS
+              components to enhance user experiences, leading to a 40% boost in
+              user engagement
+            </p>
+            <p className="innertext">
+              {" "}
+              <img src={arrow} alt="arrow" />
+              Developed a secure live exam feature with comprehensive tracking
+              and video recording, enhancing exam integrity and providing
+              detailed insights for analysis.
+            </p>
+          </div>
+        </div>
+
         <div className="work-col">
           <div className="work-div">
             <p className="heading">
@@ -248,8 +313,59 @@ function Home() {
               <div className="sk">
                 <span class="material-symbols-outlined">verified</span>
                 <div className="column">
+                  <p>Type Script</p>
+                  <span>Intermediate</span>
+                </div>
+              </div>
+              <div className="sk">
+                <span class="material-symbols-outlined">verified</span>
+                <div className="column">
                   <p>React Js</p>
                   <span>Advanced</span>
+                </div>
+              </div>
+              <div className="sk">
+                <span class="material-symbols-outlined">verified</span>
+                <div className="column">
+                  <p>React Native</p>
+                  <span>Advanced</span>
+                </div>
+              </div>
+
+              <div className="sk">
+                <span class="material-symbols-outlined">verified</span>
+                <div className="column">
+                  <p>NextJs</p>
+                  <span>Advanced</span>
+                </div>
+              </div>
+              <div className="sk">
+                <span class="material-symbols-outlined">verified</span>
+                <div className="column">
+                  <p>NodeJs</p>
+                  <span>Advanced</span>
+                </div>
+              </div>
+
+              <div className="sk">
+                <span class="material-symbols-outlined">verified</span>
+                <div className="column">
+                  <p>MongoDB</p>
+                  <span>Advanced</span>
+                </div>
+              </div>
+              <div className="sk">
+                <span class="material-symbols-outlined">verified</span>
+                <div className="column">
+                  <p>Firebase</p>
+                  <span>Advanced</span>
+                </div>
+              </div>
+              <div className="sk">
+                <span class="material-symbols-outlined">verified</span>
+                <div className="column">
+                  <p>Supabase</p>
+                  <span>Intermediate</span>
                 </div>
               </div>
               <div className="sk">
@@ -259,17 +375,10 @@ function Home() {
                   <span>Intermediate</span>
                 </div>
               </div>
-              <div className="sk">
-                <span class="material-symbols-outlined">verified</span>
-                <div className="column">
-                  <p>Advanced</p>
-                  <span>Basic</span>
-                </div>
-              </div>
             </div>
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             className="container-skills-1"
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -308,7 +417,7 @@ function Home() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
 
@@ -338,7 +447,9 @@ function Home() {
           >
             <img src={Ignus} alt="Ignus" />
             <p className="web-name">Ignus</p>
-            <a href="https://www.ignus.co.in/">Live Link</a>
+            <a href="https://github.com/durgavarapraveen/Ignus-23">
+              Github Link
+            </a>
           </motion.div>
 
           <motion.div
@@ -365,18 +476,18 @@ function Home() {
             </a>
           </motion.div>
 
-          {/* <motion.div
+          <motion.div
             className="container-projects"
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <img src="Images\Quiz.png" alt="Quiz Game" />
-            <p className="web-name">Ecommerce Website</p>
-            <a href="https://github.com/durgavarapraveen/Ecommerce_App">
+            <img src={ChatApp} alt="Chat Application" />
+            <p className="web-name">Chat Application</p>
+            <a href="https://github.com/durgavarapraveen/chat_app_mern">
               Github Link
             </a>
-          </motion.div> */}
+          </motion.div>
 
           <motion.div
             className="container-projects"
@@ -384,9 +495,24 @@ function Home() {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <img src="Images\Tamboola.png" alt="Quiz Game" />
-            <p className="web-name">Tamboola - Online Repair Store</p>
-            <a href="https://github.com/gadset">Github Link</a>
+            <img src={Ecommerce} alt="Ecommerce Platform" />
+            <p className="web-name">Ecommerce Platform</p>
+            <a href="https://github.com/durgavarapraveen/Ecommerce-App-MERN">
+              Github Link
+            </a>
+          </motion.div>
+
+          <motion.div
+            className="container-projects"
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            <img src={moneyTrackerApp} alt="Money Tracker App" />
+            <p className="web-name">Money Tracker App</p>
+            <a href="https://github.com/durgavarapraveen/MoneyTracker">
+              Github Link
+            </a>
           </motion.div>
 
           <motion.div
