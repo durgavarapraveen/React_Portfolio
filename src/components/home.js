@@ -11,17 +11,11 @@ import {
 } from "react-icons/fa";
 import { FiGithub, FiMail, FiLinkedin } from "react-icons/fi";
 import { BiMailSend, BiRightArrowAlt } from "react-icons/bi";
-import chrome from "../Vedios/chrome.mp4";
-import arrow from "../Vedios/circle-arrow.png";
-import Mampg from "../Vedios/Mampg.png";
-import DevQuest from "../Vedios/DevQuest.png";
-import Ignus from "../Vedios/Ignus.png";
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import toast from "react-hot-toast";
-import moneyTrackerApp from "../Vedios/MonryTrackerApp.jpg";
-import ChatApp from "../Vedios/chatApp.jpg";
-import Ecommerce from "../Vedios/Ecommerce.jpg";
+import chrome from "../Vedios/chrome.mp4";
+import Linku from "../Vedios/image.png";
 
 function Home() {
   const [name, setName] = useState("");
@@ -121,7 +115,7 @@ function Home() {
         </div>
         <div className="aboutme-row">
           <div className="aboutme-img">
-            <img src="Images\photo.2.jpeg" />
+            <img src="Images\photo.2.jpeg" alt="About Me" />
           </div>
           <div className="aboutme-matter">
             <div className="box">
@@ -170,7 +164,7 @@ function Home() {
         </div>
       </motion.div>
 
-      <div className="card-3" id="work">
+      {/* <div className="card-3" id="work">
         <div className="aboutme">
           <span>Experience</span>
           <p>worked in</p>
@@ -268,7 +262,7 @@ function Home() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="card-3" id="skills">
         <motion.div
@@ -432,6 +426,17 @@ function Home() {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
           >
+            <img src={Linku} alt="LinkU" />
+            <p className="web-name">Link U</p>
+            <a href="https://www.linku.co.in/">Live Link</a>
+          </motion.div>
+
+          <motion.div
+            className="container-projects"
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
             <img src="Images\Guesthouse.png" alt="IITJ Guest House" />
             <p className="web-name">Guest House Booking Website</p>
             <a href="https://institute-guest-house-booking.onrender.com/">
@@ -445,7 +450,34 @@ function Home() {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <img src={Ignus} alt="Ignus" />
+            <img src={"./Images/Suburbia.png"} alt="Ignus" />
+            <p className="web-name">Suburbia</p>
+            <a href="https://suburbia-eosin.vercel.app/">Live Link</a>
+          </motion.div>
+
+          <motion.div
+            className="container-projects"
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            <img src={"./Images/QPaper.png"} alt="QPaper" />
+            <p className="web-name">Q Paper</p>
+            <a href="https://qpaper-rosy.vercel.app/">Live Link</a>
+          </motion.div>
+
+          <motion.div
+            className="container-projects"
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            <img
+              src={
+                "https://github.com/durgavarapraveen/React_Portfolio/blob/master/src/Vedios/Ignus.png?raw=true"
+              }
+              alt="Ignus"
+            />
             <p className="web-name">Ignus</p>
             <a href="https://github.com/durgavarapraveen/Ignus-23">
               Github Link
@@ -458,7 +490,12 @@ function Home() {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <img src={Mampg} alt="MAMPG" />
+            <img
+              src={
+                "https://github.com/durgavarapraveen/React_Portfolio/blob/master/src/Vedios/Mampg.png?raw=true"
+              }
+              alt="MAMPG"
+            />
             <p className="web-name">College Website</p>
             <a href="http://www.mampg.org/">Live Link</a>
           </motion.div>
@@ -469,7 +506,12 @@ function Home() {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <img src={DevQuest} alt="Dev Quest" />
+            <img
+              src={
+                "https://github.com/durgavarapraveen/React_Portfolio/blob/master/src/Vedios/DevQuest.png?raw=true"
+              }
+              alt="Dev Quest"
+            />
             <p className="web-name">Compare - Compare your cost</p>
             <a href="https://github.com/durgavarapraveen/Devquest">
               Github Link
@@ -482,7 +524,12 @@ function Home() {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <img src={ChatApp} alt="Chat Application" />
+            <img
+              src={
+                "https://github.com/durgavarapraveen/React_Portfolio/blob/master/src/Vedios/chatApp.jpg?raw=true"
+              }
+              alt="Chat Application"
+            />
             <p className="web-name">Chat Application</p>
             <a href="https://github.com/durgavarapraveen/chat_app_mern">
               Github Link
@@ -495,7 +542,12 @@ function Home() {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <img src={Ecommerce} alt="Ecommerce Platform" />
+            <img
+              src={
+                "https://github.com/durgavarapraveen/React_Portfolio/blob/master/src/Vedios/Ecommerce.jpg?raw=true"
+              }
+              alt="Ecommerce Platform"
+            />
             <p className="web-name">Ecommerce Platform</p>
             <a href="https://github.com/durgavarapraveen/Ecommerce-App-MERN">
               Github Link
@@ -508,7 +560,12 @@ function Home() {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <img src={moneyTrackerApp} alt="Money Tracker App" />
+            <img
+              src={
+                "https://github.com/durgavarapraveen/React_Portfolio/blob/master/src/Vedios/MonryTrackerApp.jpg?raw=true"
+              }
+              alt="Money Tracker App"
+            />
             <p className="web-name">Money Tracker App</p>
             <a href="https://github.com/durgavarapraveen/MoneyTracker">
               Github Link
